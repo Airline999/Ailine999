@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8ef3649a-d60e-4cc6-a73e-6783dd26e34f": {
+      "ProjectGuid": "8ef3649a-d60e-4cc6-a73e-6783dd26e34f",
+      "DisplayName": "AirlineReservationApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
