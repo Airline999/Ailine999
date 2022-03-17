@@ -2,13 +2,25 @@ use airline_reservation
 create table FlightDetails(
 FlightID int primary key,
 FlightName varchar(40) not null,
-FromLocation varchar(40) not null,
-ToLocation varchar(40) not null,
-ArrivalTime time,
-DepartureTime time,
 NoOfSeats int,
 CreatedBy int not null,
 constraint fkey_cb_admn foreign key(CreatedBy) references UserDetails(UserID))
+
+drop table FlightDetails
+
+select* from FlightDetails
+
+alter table FlightDetails
+drop column FromLocation
+
+alter table FlightDetails
+drop column ToLocation
+
+alter table FlightDetails
+drop column ArrivalTime
+
+alter table FlightDetails
+drop column DepartureTime
 
 
 create table UserDetails(
@@ -31,7 +43,7 @@ create table AccountType(
 AccountID int primary key,
 AccountType varchar(10) not null
 )
-
+drop table AccountType
 Insert into AccountType values(1,'Admin');
 Insert into AccountType values(2,'NonAdmin');
 
@@ -76,3 +88,40 @@ constraint fkey_pid_bookid foreign key(BookingID) references BookingDetails(Book
 
 drop table PaymentDetails
 
+create table RouteDetails(
+RouteID int primary key,
+origin varchar(20) not null,
+destination varchar(20) not null
+)
+
+create table FaresTable(
+FareID int primary key,
+FareAmount int not null,
+RouteID int ,
+FlightID int,
+constraint fkey_frid_rrid foreign key(RouteID) references RouteDetails(RouteID),
+constraint fkey_fid_ffid foreign key(FlightID) references FlightDetails(FlightID),
+)
+alter table RouteDetails
+drop column FlightID
+
+
+create table ScheduleAvailability(
+ScheduleID int primary key,
+FlightID int not null,
+RouteID int not null,
+DepartureDate date not null,
+ArrivalDate date not null,
+DepartureTime time not null,
+ArrivalTime time not null,
+NoOfSeatsBooked int,
+NoOfSeatsAvailable int,
+constraint fkey_sfid_ffid foreign key(FlightID) references FlightDetails(FlightID),
+constraint fkey_srid_rrid foreign key(RouteID) references RouteDetails(RouteID),
+)
+
+create table SeatsAvailability(
+SeatID int primary Key
+SeatsAvailable int not null,
+SeatsBooked int not null,
+)
