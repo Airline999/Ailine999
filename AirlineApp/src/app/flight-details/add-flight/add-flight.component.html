@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add-flight.component.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="img">
+    <div class="topnav">
+        <ul>
+        <button><a href="./dalete/app.delete.html">delete</a></button>
+        </ul>
+      </div>
+    <div id="add" class="jumbotron text-center">
+    <!--flight number-->
+        <label>FLIGHT NUMBER :</label><br>
+        <input type="number"><br><br>
+<!--from city-->
+        <label>FROM :</label><br>
+        <select>
+            <option>select</option>
+            <option>Delhi,India</option>
+            <option>bengaluru,karnataka,India</option>
+            <option>Hyderabad,Telagana,India</option>
+            <option>Kolkata,West bengal,India</option>
+            <option>Pune,Maharastra,India</option>
+            <option>Goa,Goa,India</option>
+            <option>Ahamadabad,Gujarath,India</option>
+            <option>chennai,Tamil nadu,India</option>
+        </select><br><br>
+    <!--to city information-->
+        <label>TO :</label><br>
+        <select>
+            <option>select</option>
+            <option>Delhi,India</option>
+            <option>bengaluru,karnataka,India</option>
+            <option>Hyderabad,Telagana,India</option>
+            <option>Kolkata,West bengal,India</option>
+            <option>Pune,Maharastra,India</option>
+            <option>Goa,Goa,India</option>
+            <option>Ahamadabad,Gujarath,India</option>
+            <option>chennai,Tamil nadu,India</option>
+        </select><br><br>
+<!--departure  date and time-->
+        <label>DEPARTURE DATE :</label><br>
+       <input type="date" min="2021-01-01" max="2026-01-01">
+       <input type="time"><br><br>
+   
+<!--arrival time amd date-->
+        <label>ARRIVEL DATE/TIME :</label><br>
+        <input type="date" min="2021-01-01" max="2026-01-01" >
+        <input type="time"><br><br>
+    <!--duration time-->
+    <div>
+        <label>DURATION :</label><br>
+       <input type="time"><br><br>
+    </div>
+    <!--cabin of the flight-->
+    <div>
+        <label>CABIN :</label><br>
+       <input type=""><br><br>
+    </div>
+<!-- add butten-->
+    <div>
+        <button type="button" class="btn btn-primary">ADD</button>
+        <p id="p1"> FOR DELETING THE FLIGTH DETAILS CLICK below</p>
+        <a href="./dalete/app.delete.html">CLICK</a>
+    </div>
+</div>
+</body>
+</html>

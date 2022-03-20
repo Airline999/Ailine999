@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline login</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='login.component.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- <div class="header">
+      <h1>ndian Airline</h1>    
+    </div> -->
+     
+    <!-- <div class="topnav">
+        <ul>
+        <li id="p1"><a href="../home/home.component.html">Home</a></li>
+        <li id="p1"><a href="../user-details/user-details.component.html">Register</a></li>
+        <li id="p1"><a href="login.component.html">Login</a></li>
+        </ul>
+      </div> -->
+     
+            <h2 style="text-align: center;">Login to a Airline!</h2>
+            <form>
+             
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <span style="color: red;" id="msg">*</span>
+                  <input type="text" placeholder="Enter Username" name="uname" id="text1">
+             
+                  <label for="psw"><b>Password</b></label>
+                  <span style="color: red;" id="msg2">*</span>
+                  <input type="password" placeholder="Enter Password" name="psw" id="text2">
+             
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="Unchecked" name="remember"> Remember me
+                  </label>
+                </div>
+             
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+     
+      <script src="./login-username-validation.js"></script>
+      <div class="footer">
+        <p>2022 Airline reservation system</p>
+      </div>          
+</body>
+</html>
