@@ -1,6 +1,7 @@
 {
   "Version": 1,
   "ProjectMap": {
+<<<<<<< Updated upstream
     "09c1add9-f15a-49b6-8c1f-93993a2f5a6f": {
       "ProjectGuid": "09c1add9-f15a-49b6-8c1f-93993a2f5a6f",
       "DisplayName": "FlightBookingApp",
@@ -8,4 +9,13 @@
     }
   },
   "NextColorIndex": 1
+=======
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 0
+>>>>>>> Stashed changes
 }

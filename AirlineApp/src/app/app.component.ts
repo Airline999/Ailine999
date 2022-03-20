@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import {RegisterComponent} from './register/register.component';
+import{LoginComponent } from './login/login.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,3 +9,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'airlineapp';
 }
+
